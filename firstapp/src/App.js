@@ -1,26 +1,23 @@
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Form from './Form.js';
 
-function App() {
-  // return (
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <img src={logo} className="App-logo" alt="logo" />
-  //       <p>
-  //         Edit <code>src/App.js</code> and save to reload.
-  //       </p>
-  //       <h1>Hello from React</h1>
-  //     </header>
-  //   </div>
-  // );
-
+class App extends Component {
+  render() {
     return (
-        <div>
-            <h1>T2307A</h1>
-            <h2>Training ReactJS website</h2>
-            <p>This website contains the best CS tutorials.</p>
+      <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>React Form Validation Demo</h2>
         </div>
+        <Form />
+        <h4>
+          From <a style={{textDecoration: 'underline'}} href="https://learnetto.com/users/hrishio/courses/the-complete-react-on-rails-5-course">The Complete React on Rails Course</a>
+        </h4>
+      </div>
     );
+  }
 }
 
 export default App;
